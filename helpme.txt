@@ -1,0 +1,40 @@
+OPTIONS:
+co 		- columns show on screen
+lines	- number of lines on screen
+ts 		- tab spaces used in a file
+sw		- tab spaces
+nu 		- line numbers
+nuw		- line number columns (width)
+ru		- ruler: show cursor line/col on status bar
+scr		- scroll: number of lines to scroll w/ Ctrl-U, Ctrl-D
+ft		- type of file
+
+MODE-CHANGING COMMANDS:
+i		- insert mode
+v		- visual mode (for copy/paste)
+
+COMMANDS
+*		- search (forward)
+#		- search (backward)
+gg		- move cursor to first line
+<#>G	- move cursor to that line
+G		- move cursor to last line
+ggdG	- wipe file
+%		- (when on a bracket) move to matching bracket
+$		- goto line end
+0		- goto line beginning
+w		- goto next word
+b		- inverse of w
+u		- undo
+^R		- redo
+y		- VISUAL - yank, aka copy
+p		- VISUAL - paste
+
+:COMMANDS
+w		- write file out
+q		- quit (add ! for quitting without writing)
+x		- alias for :q
+%!xxd   - create hex dump of active file
+Save altered data with:
+%!xxd -r > [filename]
+**NOTE: only modify the hex values, not the rhs plaintext!
